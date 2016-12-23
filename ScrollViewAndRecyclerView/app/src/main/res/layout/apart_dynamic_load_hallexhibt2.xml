@@ -1,0 +1,32 @@
+<RelativeLayout
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingRight="20dp"
+              android:paddingLeft="20dp"
+              android:paddingTop="10dp"
+              android:id="@+id/inreoduce_hallexhibit1"
+              >
+              <ImageView 
+                  android:layout_width="match_parent"
+                  android:layout_height="100dp"
+                  android:id="@+id/img_left"
+                  android:scaleType="fitCenter"
+                  android:src="@drawable/pic_default_horizontal"
+                  />
+              <TextView 
+                  android:layout_width="match_parent"
+                  android:layout_height="18dip"
+                  android:background="#7F000000"
+                  android:text="1232132321"
+                  android:textSize="12sp"
+                  android:textColor="#FFFFFF"
+                  android:singleLine="true"
+				  android:ellipsize="end"
+                  android:layout_alignParentBottom="true"
+                  android:paddingLeft="5dip"
+                  android:id="@+id/tv_hallexhibit_name1"
+                  android:gravity="center"
+                  />
+</RelativeLayout>

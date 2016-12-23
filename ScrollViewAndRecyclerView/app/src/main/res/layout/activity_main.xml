@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#cf620f"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主题1"
+                android:textColor="#cd0084"
+                android:textSize="17sp"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/themehall"
+            android:layout_height="160dp" />
+            <!--自定义scrollView-->
+            <strollmuseum.iot.zhjy.com.scrollviewandrecyclerview.view.ThemeHallScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#f07d28"></View>
+                    <TextView
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="#f07d28"
+                        android:text="展会列表" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#f07d28"></View>
+
+                    <!--列表数据-->
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </android.support.v7.widget.RecyclerView>
+                </LinearLayout>
+            </strollmuseum.iot.zhjy.com.scrollviewandrecyclerview.view.ThemeHallScrollView>
+    </LinearLayout>
+
